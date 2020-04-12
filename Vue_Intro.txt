@@ -1,0 +1,39 @@
+├── build                      // 构建相关  
+├── config                     // 配置相关
+├── src                        // 源代码
+│   ├── api                    // 所有请求
+│   ├── components             // 全局UI组件
+│   ├── directives              // 全局指令
+│   ├── mock                   // mock数据,当有后台服务器时，该目录需删掉
+│   ├── router                 // 路由
+│   ├── store                  // 全局store管理
+│   ├── utils                  // 全局公用方法
+│   ├── containers              // 自适应布局组合
+│   ├── vendor                  // UI组件依赖js
+│   ├── views                   // views界面
+│   │    ├── charts             //图表组件
+│   │    ├── components         //首页组件
+│   │    ├── login              //登录界面
+│   │    ├── pages              //错误界面
+│   │    └── permission        //权限测试界面
+│   ├── App.vue                // 入口页面
+│   └── main.js                // 入口 加载组件 初始化等
+├── static                     // 静态资源
+│   ├── bower_components        //七牛SDK
+│   ├── css                     //css
+│   ├── js                      //js
+│   └── Jquery.min.js           // jq
+├── .babelrc                   // babel-loader 配置
+├── eslintrc.js                // eslint 配置项
+├── .gitignore                 // git 忽略项
+├── favicon.ico                // favicon图标
+├── index.html                 // html模板
+└── package.json               // package.json 第三方包引用配置文件
+
+build和config是webpack的配置文件，src中存放着框架的主要文件，api是已经封装好的api请求，components是我们的UI组件。mock是便于我们前端调试的一个工具，可以截获http请求，返回数据，从而做到独立于后端开发，加快我们的开发进度，当我们需要请求服务器的时候要把这个文件夹删掉。
+
+　　我们需要新加页面就在views里面加上新的界面文件，然后在router里配置好路由就可以正常访问了。
+
+　　当我们需要提交页面放到服务器上也很简单，运行
+npm run build:prod
+项目目录下就会多出一个dist文件夹，里面有index.html文件和static文件夹，放在服务器上就行。不需要在服务器上安装任何环境，甚至不需要node即可。

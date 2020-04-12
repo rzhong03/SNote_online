@@ -1,0 +1,18 @@
+1.Content type
+2.getter方法拿到usrId
+3.debug方法（debugger/F12/console）用登录注册演示
+4.div高度自适应的方法（NoteBook页面）
+5.几种接口的使用方法（fastmock演示）
+6.用Notebook举例 （snote.online演示）
+  6.1 如何拿到List数据
+  6.2 List数据拿到后如何与table绑定
+  6.3 删除前的确认
+
+注册
+登录->拿token->存到local storage->封装到Request header中
+全局变量的设置 user.js
+
+1.拿回显列表
+2.新增->新增表单显示->新增确认->表单隐藏->刷新列表
+3.删除->删除确认->刷新列表
+4.
