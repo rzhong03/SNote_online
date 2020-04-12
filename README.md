@@ -23,7 +23,7 @@
 
 ```
 # 克隆项目
-git clone git@github.com:rzhong03/SNote.git
+git clone git@github.com:rzhong03/SNote_online.git
 
 # 安装依赖
 npm install
